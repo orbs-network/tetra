@@ -1,46 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow-x: hidden;">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ORBS Staking Wallet</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet" />
+    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Single Page Apps for GitHub Pages</title>
-  <script type="text/javascript">
-    // Single Page Apps for GitHub Pages
-    // https://github.com/rafrex/spa-github-pages
-    // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-    // ----------------------------------------------------------------------
-    // This script takes the current url and converts the path and query
-    // string into just a query string, and then redirects the browser
-    // to the new url with only a query string and hash fragment,
-    // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-    // http://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
-    // Note: this 404.html file must be at least 512 bytes for it to work
-    // with Internet Explorer (it is currently > 512 bytes)
+    <!-- Chrome, Firefox OS and Opera (DEV_NOTE : Same color as header) -->
+    <meta name="theme-color" content="#0D0D0D" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0D0D0D" />
+    <link id="favicon" rel="icon" type="image/x-icon" href="./assets/favicons/tet.png">
 
-    // If you're creating a Project Pages site and NOT using a custom domain,
-    // then set segmentCount to 1 (enterprise users may need to set it to > 1).
-    // This way the code will only replace the route part of the path, and not
-    // the real directory in which the app resides, for example:
-    // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
-    // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
-    // Otherwise, leave segmentCount as 0.
-    // DEV_NOTE : This file is not yet covered by webpack env variables usage, so we have to update it manually.
-    // var segmentCount = process.env.PUBLIC_BASE_PATH_SECTIONS;
-    var segmentCount = 0;
+    
+  </head>
+  <body style="background-color: black;">
+    <div id="app" style="height: 100%;"></div>
 
-    var l = window.location;
-    l.replace(
-      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
-      l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-      (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-      l.hash
-    );
-
-  </script>
-</head>
-
-<body>
-</body>
-
+    
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+  <script src="/vendors-13f784b0-bundle.js"></script><script src="/main-13f784b0-bundle.js"></script></body>
 </html>
